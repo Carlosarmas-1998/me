@@ -4,6 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carlos Armas Martínez | Perfil oficial</title>
+    
+    <meta name="description" content="Perfil oficial de Carlos Armas Martínez, escritor hondureño radicado en Madrid. Creador de la firma de elegancia ÈNIGME y autor del tratado psicológico Manifiesto del delirio.">
+    <meta name="keywords" content="Carlos Armas Martínez, escritor hondureño, ÈNIGME, Manifiesto del delirio, autor, emprendedor, Choluteca, Madrid">
+    <meta name="author" content="Carlos Armas Martínez">
+    
+    <link rel="canonical" href="https://carlosarmas.site/">
+
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Carlos Armas Martínez | Perfil Oficial">
+    <meta property="og:description" content="Escritor, emprendedor y curador hondureño radicado en Madrid. Fundador de ÈNIGME y autor de Manifiesto del delirio.">
+    <meta property="og:url" content="https://carlosarmas.site/">
+    <meta property="og:image" content="https://carlosarmas.site/cj.jpg">
+    <meta property="profile:first_name" content="Carlos">
+    <meta property="profile:last_name" content="Armas Martínez">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Carlos Armas Martínez | Perfil Oficial">
+    <meta name="twitter:description" content="Escritor, emprendedor y creador hondureño radicado en Madrid. Fundador de ÈNIGME.">
+    <meta name="twitter:image" content="https://carlosarmas.site/cj.jpg">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Carlos Armas Martínez",
+      "url": "https://carlosarmas.site/",
+      "image": "https://carlosarmas.site/cj.jpg",
+      "jobTitle": "Escritor, Emprendedor y Curador",
+      "birthPlace": {
+        "@type": "Place",
+        "name": "Choluteca, Honduras"
+      },
+      "homeLocation": {
+        "@type": "Place",
+        "name": "Madrid, España"
+      },
+      "brand": {
+        "@type": "Brand",
+        "name": "ÈNIGME",
+        "url": "https://www.enigmeofficial.com"
+      },
+      "knowsAbout": ["Literatura", "Programación", "Derecho", "Contabilidad", "Dirección Creativa"],
+      "children": "Abril Armas"
+    }
+    </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,145 +66,33 @@
             --max-width-page: 1150px;
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { background-color: var(--bg-page); color: var(--text-main); font-family: Arial, Helvetica, sans-serif; line-height: 1.6; padding-bottom: 50px; }
 
-        html {
-            scroll-behavior: smooth;
-        }
+        header { background-color: #ffffff; border-bottom: 1px solid var(--border-soft); padding: 0.9rem 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        .site-logo-text { font-family: 'Lora', serif; font-size: 1.2rem; font-weight: 600; color: #111; letter-spacing: 0.02em; }
+        nav { display: flex; gap: 1.5rem; flex-wrap: wrap; }
+        nav a { font-size: 0.9rem; color: var(--text-link); text-decoration: none; }
+        nav a:hover { text-decoration: underline; }
 
-        body {
-            background-color: var(--bg-page);
-            color: var(--text-main);
-            font-family: Arial, Helvetica, sans-serif;
-            line-height: 1.6;
-            padding-bottom: 50px;
-        }
+        .container { max-width: var(--max-width-page); margin: 0 auto; padding: 2rem 5%; }
+        .page-kicker { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); margin-bottom: 0.65rem; }
+        h1 { font-family: 'Lora', serif; font-size: 2.3rem; font-weight: 400; border-bottom: 1px solid var(--border-soft); margin-bottom: 0.75rem; padding-bottom: 0.35rem; }
+        h2 { font-family: 'Lora', serif; font-size: 1.55rem; border-bottom: 1px solid var(--border-soft); margin: 2rem 0 1rem 0; padding-bottom: 0.2rem; }
+        h3 { font-size: 1.15rem; margin: 1.4rem 0 0.8rem 0; font-weight: bold; }
+        p { margin-bottom: 1rem; font-size: 0.97rem; text-align: justify; }
+        a { color: var(--text-link); text-decoration: none; }
+        a:hover { text-decoration: underline; color: var(--text-link-hover); }
 
-        header {
-            background-color: #ffffff;
-            border-bottom: 1px solid var(--border-soft);
-            padding: 0.9rem 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
+        .gallery-button-wrap { margin: 1.2rem 0 1.8rem 0; }
+        .gallery-button { display: inline-block; border: 1px solid var(--border-soft); background: var(--bg-soft); color: var(--text-main); padding: 0.7rem 1rem; font-size: 0.95rem; font-weight: 600; text-decoration: none; border-radius: 6px; }
+        .gallery-button:hover { background: #eef1f4; text-decoration: none; color: var(--text-main); }
 
-        .site-logo-text {
-            font-family: 'Lora', serif;
-            font-size: 1.2rem;
-            font-weight: 600;
-            color: #111;
-            letter-spacing: 0.02em;
-        }
+        .layout-main { display: flex; gap: 2.5rem; margin-top: 1rem; }
+        .content-article { flex: 1; }
 
-        nav {
-            display: flex;
-            gap: 1.5rem;
-            flex-wrap: wrap;
-        }
-
-        nav a {
-            font-size: 0.9rem;
-            color: var(--text-link);
-            text-decoration: none;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        .container {
-            max-width: var(--max-width-page);
-            margin: 0 auto;
-            padding: 2rem 5%;
-        }
-
-        .page-kicker {
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-            color: var(--text-muted);
-            margin-bottom: 0.65rem;
-        }
-
-        h1 {
-            font-family: 'Lora', serif;
-            font-size: 2.3rem;
-            font-weight: 400;
-            border-bottom: 1px solid var(--border-soft);
-            margin-bottom: 0.75rem;
-            padding-bottom: 0.35rem;
-        }
-
-        h2 {
-            font-family: 'Lora', serif;
-            font-size: 1.55rem;
-            border-bottom: 1px solid var(--border-soft);
-            margin: 2rem 0 1rem 0;
-            padding-bottom: 0.2rem;
-        }
-
-        h3 {
-            font-size: 1.15rem;
-            margin: 1.4rem 0 0.8rem 0;
-            font-weight: bold;
-        }
-
-        p {
-            margin-bottom: 1rem;
-            font-size: 0.97rem;
-            text-align: justify;
-        }
-
-        a {
-            color: var(--text-link);
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-            color: var(--text-link-hover);
-        }
-
-        .gallery-button-wrap {
-            margin: 1.2rem 0 1.8rem 0;
-        }
-
-        .gallery-button {
-            display: inline-block;
-            border: 1px solid var(--border-soft);
-            background: var(--bg-soft);
-            color: var(--text-main);
-            padding: 0.7rem 1rem;
-            font-size: 0.95rem;
-            font-weight: 600;
-            text-decoration: none;
-            border-radius: 6px;
-        }
-
-        .gallery-button:hover {
-            background: #eef1f4;
-            text-decoration: none;
-            color: var(--text-main);
-        }
-
-        .layout-main {
-            display: flex;
-            gap: 2.5rem;
-            margin-top: 1rem;
-        }
-
-        .content-article {
-            flex: 1;
-        }
-
+        /* PROFILE CARD (BIO) STYLES */
         .profile-card {
             width: 280px;
             background-color: var(--bg-soft);
@@ -195,7 +128,10 @@
             border: 1px solid var(--border-soft);
             display: inline-block;
             background: #fff;
+            cursor: pointer;
+            transition: opacity 0.2s;
         }
+        .profile-card-image img:hover { opacity: 0.8; }
 
         .profile-card table {
             width: 100%;
@@ -214,132 +150,130 @@
             width: 40%;
         }
 
-        .showcase-block {
-            margin: 2rem 0;
-            border: 1px solid var(--border-soft);
-            background: #fff;
-            display: flex;
-            border-radius: 6px;
-            overflow: hidden;
-        }
+        /* SHOWCASE & GALLERY STYLES */
+        .showcase-block { margin: 2rem 0; border: 1px solid var(--border-soft); background: #fff; display: flex; border-radius: 6px; overflow: hidden; }
+        .showcase-text { flex: 2; padding: 1.5rem; }
+        .showcase-img { flex: 1; background: var(--bg-soft); border-left: 1px solid var(--border-soft); display: flex; align-items: center; justify-content: center; padding: 1rem; }
+        .showcase-img img { max-width: 100%; height: auto; object-fit: contain; cursor: pointer; transition: opacity 0.2s; }
+        .showcase-img img:hover { opacity: 0.8; }
 
-        .showcase-text {
-            flex: 2;
-            padding: 1.5rem;
-        }
+        .gallery-section { margin-top: 3rem; }
+        .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 1rem; }
+        .gallery-card { border: 1px solid var(--border-soft); background: var(--bg-soft); padding: 0.75rem; border-radius: 6px; }
+        .gallery-card img { display: block; width: 100%; height: 300px; object-fit: contain; background: #fff; border: 1px solid #e7eaee; cursor: pointer; transition: opacity 0.2s; }
+        .gallery-card img:hover { opacity: 0.8; }
+        .gallery-caption { margin-top: 0.5rem; font-size: 0.82rem; color: var(--text-muted); text-align: center; word-break: break-word; }
 
-        .showcase-img {
-            flex: 1;
-            background: var(--bg-soft);
-            border-left: 1px solid var(--border-soft);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 1rem;
-        }
+        .note-box { margin-top: 2rem; padding: 1rem 1.1rem; background: #fafbfc; border: 1px solid var(--border-soft); border-radius: 6px; font-size: 0.9rem; color: var(--text-muted); }
+        
+        /* FOOTER & INSTAGRAM STYLES */
+        footer { margin-top: 4rem; padding: 2rem 5%; font-size: 0.85rem; color: var(--text-muted); border-top: 1px solid var(--border-soft); text-align: center; background-color: var(--bg-soft); }
+        
+        .instagram-container { margin-top: 1.5rem; display: flex; flex-direction: column; align-items: center; gap: 0.5rem; }
+        .instagram-text { color: var(--text-main); font-weight: 500; font-size: 0.95rem; }
+        .instagram-link { display: inline-flex; align-items: center; justify-content: center; transition: transform 0.2s; }
+        .instagram-link:hover { transform: scale(1.1); text-decoration: none; }
 
-        .showcase-img img {
-            max-width: 100%;
-            height: auto;
-            object-fit: contain;
-        }
-
-        .gallery-section {
-            margin-top: 3rem;
-        }
-
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-
-        .gallery-card {
-            border: 1px solid var(--border-soft);
-            background: var(--bg-soft);
-            padding: 0.75rem;
-            border-radius: 6px;
-        }
-
-        .gallery-card img {
-            display: block;
+        /* --- LIGHTBOX STYLES --- */
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            left: 0;
+            top: 0;
             width: 100%;
-            height: 300px;
-            object-fit: contain;
-            background: #fff;
-            border: 1px solid #e7eaee;
-        }
-
-        .gallery-caption {
-            margin-top: 0.5rem;
-            font-size: 0.82rem;
-            color: var(--text-muted);
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            overflow: auto;
             text-align: center;
-            word-break: break-word;
+        }
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: 300;
+            transition: 0.3s;
+            cursor: pointer;
+            z-index: 10000;
+        }
+        .lightbox-close:hover { color: var(--text-link); }
+        .lightbox-content {
+            margin: auto;
+            display: block;
+            max-width: 90%;
+            max-height: 75vh;
+            margin-top: 5vh;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            animation: zoomIn 0.3s ease;
+        }
+        .lightbox-controls { margin-top: 25px; }
+        .lightbox-download-btn {
+            display: inline-block;
+            background: #ffffff;
+            color: #000000;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(255,255,255,0.2);
+        }
+        .lightbox-download-btn:hover {
+            background: var(--text-link);
+            color: #ffffff;
+            transform: translateY(-2px);
+            text-decoration: none;
+        }
+        @keyframes zoomIn {
+            from {transform:scale(0.9); opacity:0;}
+            to {transform:scale(1); opacity:1;}
         }
 
-        .note-box {
-            margin-top: 2rem;
-            padding: 1rem 1.1rem;
-            background: #fafbfc;
-            border: 1px solid var(--border-soft);
-            border-radius: 6px;
-            font-size: 0.9rem;
-            color: var(--text-muted);
-        }
-
-        footer {
-            margin-top: 4rem;
-            padding: 1rem 5%;
-            font-size: 0.78rem;
-            color: var(--text-muted);
-            border-top: 1px solid var(--border-soft);
-            text-align: left;
-        }
-
+        /* RESPONSIVE STYLES (PRO mobile adjustments) */
         @media (max-width: 850px) {
-            .layout-main {
+            .layout-main { flex-direction: column; }
+
+            /* HACIENDO LA FOTO DE BIO PEQUEÑA EN MÓVIL */
+            .profile-card {
+                width: 100%;
+                max-width: none;
+                float: none;
+                margin: 0 0 1.5rem 0;
+                display: flex;
                 flex-direction: column;
             }
 
-            .profile-card {
-                width: 100%;
-                max-width: 260px;
-                float: none;
-                margin: 0 auto 1.5rem auto;
+            .profile-card-image {
+                background-color: transparent;
+                border: none;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                margin-top: -1rem; 
+                margin-bottom: 0;
             }
 
             .profile-card-image img {
-                max-width: 120px;
+                max-width: 80px; /* VERDADERO MINI AVATAR */
+                border-radius: 50%; /* Círculo para look pro */
+                border: 2px solid var(--border-soft);
             }
 
-            .showcase-block {
-                flex-direction: column;
-            }
-
-            .showcase-img {
-                border-left: none;
-                border-top: 1px solid var(--border-soft);
-            }
-
-            header {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 0.7rem;
-            }
-
-            nav {
-                gap: 1rem;
-            }
-
-            .gallery-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .gallery-card img {
-                height: auto;
-            }
+            .showcase-block { flex-direction: column; }
+            .showcase-img { border-left: none; border-top: 1px solid var(--border-soft); }
+            header { flex-direction: column; align-items: flex-start; gap: 0.7rem; }
+            nav { gap: 1rem; }
+            .gallery-grid { grid-template-columns: 1fr; }
+            .gallery-card img { height: auto; }
+            
+            .lightbox-content { max-height: 65vh; margin-top: 10vh; }
+            .lightbox-close { top: 10px; right: 20px; }
         }
     </style>
 </head>
@@ -369,7 +303,7 @@
             <aside class="profile-card">
                 <div class="profile-card-title">Carlos Armas Martínez</div>
                 <div class="profile-card-image">
-                    <img src="cj.jpg" alt="Retrato de Carlos Armas Martínez">
+                    <img src="cj.jpg" alt="Retrato oficial de Carlos Armas Martínez" class="zoomable">
                 </div>
                 <table>
                     <tr>
@@ -386,7 +320,7 @@
                     </tr>
                     <tr>
                         <th>Ocupación</th>
-                        <td>Escritor, emprendedor y creador de marca</td>
+                        <td>Escritor, emprendedor y curador de diseño</td>
                     </tr>
                     <tr>
                         <th>Áreas</th>
@@ -395,6 +329,10 @@
                     <tr>
                         <th>Hija</th>
                         <td>Abril Armas</td>
+                    </tr>
+                    <tr>
+                        <th>Familiares</th>
+                        <td>Víctor, Kency, Kelin y Keydi (hermanos)</td>
                     </tr>
                     <tr>
                         <th>Firma / marca</th>
@@ -407,25 +345,25 @@
                 </table>
             </aside>
 
-            <p><strong>Carlos Armas Martínez</strong> es un escritor, emprendedor y creador hondureño radicado en <a href="https://es.wikipedia.org/wiki/Madrid" target="_blank" rel="noopener noreferrer">Madrid</a>, <a href="https://es.wikipedia.org/wiki/Espa%C3%B1a" target="_blank" rel="noopener noreferrer">España</a>. Desarrolla proyectos vinculados a la creación de marca, la escritura y la construcción de identidad visual.</p>
+            <p><strong>Carlos Armas Martínez</strong> es un escritor, emprendedor y curador de diseño hondureño radicado en <a href="https://es.wikipedia.org/wiki/Madrid" target="_blank" rel="noopener noreferrer">Madrid</a>, <a href="https://es.wikipedia.org/wiki/Espa%C3%B1a" target="_blank" rel="noopener noreferrer">España</a>. Desarrolla proyectos vinculados a la creación de marca, la escritura y la construcción de identidad visual.</p>
 
             <h2 id="biografia">Biografía y formación</h2>
-            <p>Originario de <a href="https://es.wikipedia.org/wiki/Choluteca" target="_blank" rel="noopener noreferrer">Choluteca</a>, <a href="https://es.wikipedia.org/wiki/Honduras" target="_blank" rel="noopener noreferrer">Honduras</a>, Carlos Armas Martínez ha desarrollado una trayectoria centrada en la combinación de sensibilidad artística, visión empresarial y formación técnica. Su perfil integra conocimientos en <strong>programación</strong>, <strong>derecho</strong> y <strong>contabilidad</strong>.</p>
+            <p>Originario de <a href="https://es.wikipedia.org/wiki/Choluteca" target="_blank" rel="noopener noreferrer">Choluteca</a>, <a href="https://es.wikipedia.org/wiki/Honduras" target="_blank" rel="noopener noreferrer">Honduras</a>, Carlos Armas Martínez ha desarrollado una trayectoria centrada en la combinación de sensibilidad artística, visión empresarial y formación técnica. Su perfil integra conocimientos en <strong>programación</strong>, <strong>derecho</strong> y <strong>contabilidad</strong>, herramientas que utiliza para estructurar tanto sus emprendimientos como la compleja arquitectura de sus textos.</p>
 
             <p>Desde <a href="https://es.wikipedia.org/wiki/Madrid" target="_blank" rel="noopener noreferrer">Madrid</a>, dirige iniciativas con proyección hacia <a href="https://es.wikipedia.org/wiki/Honduras" target="_blank" rel="noopener noreferrer">Honduras</a> y otros mercados hispanohablantes, especialmente en ámbitos relacionados con marca, comercio, diseño y comunicación.</p>
 
             <h3>Vida personal</h3>
-            <p>Entre sus referencias creativas figuran el silencio, la introspección, la estética visual y la música. Entre sus influencias artísticas y musicales destaca <strong><a href="https://es.wikipedia.org/wiki/Lady_Gaga" target="_blank" rel="noopener noreferrer">Lady Gaga</a></strong>, por su dimensión conceptual y visual.</p>
+            <p>De carácter introspectivo, proviene de una familia estructurada conformada por su madre y sus cuatro hermanos. En el ámbito íntimo, es padre de Abril Armas. Entre sus referencias creativas figuran el silencio, la estética visual y la música. Es un profundo admirador de la propuesta artística de <strong><a href="https://es.wikipedia.org/wiki/Lady_Gaga" target="_blank" rel="noopener noreferrer">Lady Gaga</a></strong>, influences que se filtran sutilmente en su concepción del arte. Su entorno de máxima creatividad suele estar acompañado del clima de invierno, una taza de té y galletas.</p>
 
             <h2 id="proyectos">ÈNIGME</h2>
-            <p><strong><a href="https://www.enigmeofficial.com" target="_blank" rel="noopener noreferrer">ÈNIGME</a></strong> es una marca concebida por Carlos Armas Martínez como una propuesta centrada en diseño, identidad y presencia estética. Su lema es <strong>“Aura · Misterio · Presencia”</strong>.</p>
+            <p><strong><a href="https://www.enigmeofficial.com" target="_blank" rel="noopener noreferrer">ÈNIGME</a></strong> es una firma concebida por Carlos Armas Martínez como una propuesta centrada en diseño, identidad y presencia estética. Su lema es <strong>“Aura · Misterio · Presencia”</strong>.</p>
 
             <div class="showcase-block">
                 <div class="showcase-text">
-                    <p>La marca ha sido planteada como una plataforma de proyección comercial y conceptual, con especial interés en el mercado hondureño. A través de joyería, bolsos y otros objetos seleccionados, <strong><a href="https://www.enigmeofficial.com" target="_blank" rel="noopener noreferrer">ÈNIGME</a></strong> desarrolla una línea visual propia dentro del segmento de lujo accesible y presentación cuidada.</p>
+                    <p>La marca ha sido planteada como una plataforma de proyección comercial y conceptual, con especial interés en el mercado de Honduras. A través de joyería, bolsos y otros objetos seleccionados meticulosamente en Europa, <strong><a href="https://www.enigmeofficial.com" target="_blank" rel="noopener noreferrer">ÈNIGME</a></strong> desarrolla una línea visual propia dentro del segmento de lujo silente, estructurando sus operaciones y atención personalizada en la moneda local (L).</p>
                 </div>
                 <div class="showcase-img">
-                    <img src="loo.png" alt="Emblema oficial de ÈNIGME">
+                    <img src="loo.png" alt="Emblema oficial de ÈNIGME" class="zoomable">
                 </div>
             </div>
 
@@ -434,50 +372,46 @@
 
             <p>Entre sus trabajos publicados se encuentra <em><strong><a href="https://www.amazon.es/Manifiesto-delirio-Carlos-Armas-Mart%C3%ADnez/dp/B0FV127RG8" target="_blank" rel="noopener noreferrer">Manifiesto del delirio</a></strong></em>, una obra de tono introspectivo y simbólico que explora la fractura interior del individuo, la tensión entre pensamiento y emoción, y la búsqueda de sentido en medio del desconcierto contemporáneo. El libro se sitúa en una línea de escritura reflexiva donde la identidad, el silencio, la memoria y el desborde emocional ocupan un lugar central.</p>
 
-            <p>Lejos de una narrativa puramente lineal, la obra se construye como un recorrido por estados internos, imágenes mentales y zonas de conflicto donde la voz del autor avanza entre lucidez, herida, percepción y deseo de reconstrucción. En ese sentido, el texto se acerca al ensayo íntimo, al manifiesto personal y a la exploración psicológica, articulando una escritura que no busca únicamente contar, sino también revelar, tensar y nombrar aquello que suele permanecer oculto.</p>
+            <p>Lejos de una narrativa puramente lineal, la obra se construye como un recorrido por estados internos, imágenes mentales y zonas de conflicto donde la voz del autor avanza entre lucidez, herida, percepción y deseo de reconstrucción. En ese sentido, el texto se acerca al ensayo íntimo, al manifiesto personal y a la exploración psicológica.</p>
 
             <div class="showcase-block">
                 <div class="showcase-text">
                     <p>Uno de los rasgos más reconocibles de <em>Manifiesto del delirio</em> es su interés por lo invisible: los procesos interiores, las contradicciones del yo, la fatiga emocional, el vacío, la intensidad afectiva y la necesidad de convertir la experiencia en lenguaje. La obra plantea la escritura como un espacio de confrontación con uno mismo y como una forma de transformar lo íntimo en materia estética.</p>
 
-                    <p>En su desarrollo, el libro también dialoga con temas como la soledad, la construcción de la identidad, la percepción fragmentada de la realidad, el peso del pasado y la relación entre sensibilidad y resistencia. Más que ofrecer respuestas cerradas, propone una atmósfera de pensamiento y una voz autoral que se mueve entre la observación interior, la carga simbólica y la voluntad de sentido.</p>
+                    <p>En su desarrollo, el libro también dialoga con temas como la soledad, la construcción de la identidad, la percepción fragmentada de la realidad y la relación entre sensibilidad y resistencia. Su naturaleza provocadora ha generado un culto silencioso de lectores a nivel internacional, con presencia en México, Uruguay, Estados Unidos, España, Francia y Reino Unido.</p>
                 </div>
                 <div class="showcase-img">
-                    <img src="cja.jpg" alt="Portada de Manifiesto del delirio">
+                    <img src="cja.jpg" alt="Portada del libro Manifiesto del delirio" class="zoomable">
                 </div>
             </div>
 
-            <p>La dimensión del libro se conecta de forma natural con otros proyectos desarrollados por Carlos Armas Martínez, especialmente en el modo en que concibe la estética, el símbolo y la presencia. En <em>Manifiesto del delirio</em>, la palabra no funciona solo como relato, sino también como construcción de atmósfera, de identidad y de visión. Esa continuidad entre escritura, imagen y concepto sitúa la obra dentro de un universo creativo coherente, donde literatura y dirección artística se alimentan mutuamente.</p>
-
-            <p>Desde el punto de vista temático, el libro gira alrededor de una sensibilidad marcada por el silencio, la profundidad emocional y la tensión entre la fragilidad y la forma. Su tono combina observación, intensidad y elaboración simbólica, dando lugar a una propuesta que se apoya en el pensamiento introspectivo sin renunciar a una dimensión estética reconocible. De esta manera, la obra se presenta como una pieza significativa dentro del recorrido creativo del autor.</p>
+            <p>La dimensión del libro se conecta de forma natural con otros proyectos desarrollados por Carlos Armas Martínez, especialmente en el modo en que concibe la estética, el símbolo y la presencia. En <em>Manifiesto del delirio</em>, la palabra no funciona solo como relato, sino también como construcción de atmósfera. Esa continuidad entre escritura, imagen y concepto sitúa la obra dentro de un universo creativo coherente.</p>
 
             <h2>Filosofía creativa</h2>
-            <p>Su enfoque creativo se basa en la relación entre estructura, emoción, estética y construcción de significado. Desde esa perspectiva, sus proyectos conectan empresa, lenguaje visual y escritura dentro de una misma visión personal.</p>
+            <p>Su enfoque creativo se basa en la relación entre estructura, emoción, estética y construcción de significado. Desde esa perspectiva, sus proyectos conectan empresa, lenguaje visual y escritura dentro de una misma visión personal, apoyada en su formación interdisciplinaria.</p>
 
-            <p>En el caso de su obra literaria, esta filosofía se manifiesta en una búsqueda constante por convertir lo interno en forma, y por dar lenguaje a estados emocionales complejos sin vaciarlos de intensidad. La escritura aparece así no solo como expresión, sino también como método de comprensión, depuración y afirmación identitaria.</p>
-
-            <p>Esta visión atraviesa tanto su producción textual como su trabajo de marca: en ambos casos existe una atención clara hacia la presencia, el símbolo, la atmósfera y la idea de construir universos con coherencia estética. El resultado es una línea creativa en la que fondo y forma se entienden como partes de una misma arquitectura personal.</p>
+            <p>Esta visión atraviesa tanto su producción textual como su trabajo de marca: en ambos casos existe una atención clara hacia la presencia, el misterio, la atmósfera y la idea de construir universos con coherencia estética. El resultado es una línea creativa en la que fondo y forma se entienden como partes de una misma arquitectura personal.</p>
 
             <h2 id="galeria" class="gallery-section">Galería</h2>
             <div class="gallery-grid">
                 <div class="gallery-card">
-                    <img src="cj.jpg" alt="Carlos Armas Martínez">
+                    <img src="cj.jpg" alt="Carlos Armas Martínez" class="zoomable">
                     <div class="gallery-caption">Carlos Armas Martínez</div>
                 </div>
 
                 <div class="gallery-card">
-                    <img src="cja.jpg" alt="Portada de Manifiesto del delirio">
+                    <img src="cja.jpg" alt="Portada de Manifiesto del delirio" class="zoomable">
                     <div class="gallery-caption">Portada de <em>Manifiesto del delirio</em></div>
                 </div>
 
                 <div class="gallery-card">
-                    <img src="loo.png" alt="Identidad visual de ÈNIGME">
+                    <img src="loo.png" alt="Identidad visual de ÈNIGME" class="zoomable">
                     <div class="gallery-caption">ÈNIGME</div>
                 </div>
             </div>
 
             <div class="note-box">
-                Este sitio presenta un perfil oficial de carácter editorial e informativo. No representa una entrada enciclopédica ni una publicación de terceros.
+                Este sitio presenta un perfil oficial de carácter editorial e informativo. No representa una entrada enciclopédica libre ni una publicación de terceros.
             </div>
 
         </div>
@@ -486,7 +420,68 @@
 
 <footer>
     <p>© Carlos Armas Martínez. Perfil oficial.</p>
+    
+    <div class="instagram-container">
+        <p class="instagram-text">Sígueme en mi perfil de Instagram para conectar conmigo:</p>
+        <a href="https://www.instagram.com/carlosjose_armas?igsh=ZGdldXo0NWw3amFv&utm_source=qr" target="_blank" rel="noopener noreferrer" class="instagram-link" title="Sígueme en Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                <defs>
+                    <linearGradient id="ig-grad" x1="15%" y1="100%" x2="85%" y2="0%">
+                        <stop offset="0%" stop-color="#f09433" />
+                        <stop offset="25%" stop-color="#e6683c" />
+                        <stop offset="50%" stop-color="#dc2743" />
+                        <stop offset="75%" stop-color="#cc2366" />
+                        <stop offset="100%" stop-color="#bc1888" />
+                    </linearGradient>
+                </defs>
+                <path fill="url(#ig-grad)" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.791-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.209-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+    </div>
 </footer>
+
+<div id="image-lightbox" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <div class="lightbox-controls">
+        <a id="lightbox-download" href="" download class="lightbox-download-btn">⬇ Descargar Imagen</a>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const lightbox = document.getElementById("image-lightbox");
+        const lightboxImg = document.getElementById("lightbox-img");
+        const lightboxDownload = document.getElementById("lightbox-download");
+        const closeBtn = document.querySelector(".lightbox-close");
+        
+        // Seleccionamos todas las imágenes que tengan la clase 'zoomable'
+        const images = document.querySelectorAll("img.zoomable");
+        
+        images.forEach(img => {
+            img.addEventListener("click", function() {
+                lightbox.style.display = "block";
+                lightboxImg.src = this.src;
+                lightboxDownload.href = this.src;
+                
+                // Extraer el nombre del archivo para que se descargue con ese nombre
+                const filename = this.src.substring(this.src.lastIndexOf('/')+1);
+                lightboxDownload.download = filename;
+            });
+        });
+        
+        // Cerrar al hacer clic en la "X"
+        closeBtn.addEventListener("click", function() {
+            lightbox.style.display = "none";
+        });
+        
+        // Cerrar al hacer clic fuera de la imagen (en el fondo oscuro)
+        lightbox.addEventListener("click", function(e) {
+            if (e.target === lightbox) {
+                lightbox.style.display = "none";
+            }
+        });
+    });
+</script>
 
 </body>
 </html>
