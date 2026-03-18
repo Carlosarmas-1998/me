@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlos Armas Martínez | Perfil biográfico</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-page: #ffffff;
+            --bg-infobox: #f8f9fa;
+            --border-wiki: #a2a9b1;
+            --text-main: #202122;
+            --text-link: #0645ad;
+            --text-link-hover: #0b0080;
+            --text-muted: #54595d;
+            --max-width-page: 1150px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--bg-page);
+            color: var(--text-main);
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            padding-bottom: 50px;
+        }
+
+        header {
+            background-color: #f8f9fa;
+            border-bottom: 1px solid var(--border-wiki);
+            padding: 0.8rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .wiki-logo-text {
+            font-family: 'Lora', serif;
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: #000;
+        }
+
+        nav {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            font-size: 0.85rem;
+            color: var(--text-link);
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: var(--max-width-page);
+            margin: 0 auto;
+            padding: 2rem 5%;
+        }
+
+        h1 {
+            font-family: 'Lora', serif;
+            font-size: 2.2rem;
+            font-weight: 400;
+            border-bottom: 1px solid var(--border-wiki);
+            margin-bottom: 0.5rem;
+            padding-bottom: 0.2rem;
+        }
+
+        h2 {
+            font-family: 'Lora', serif;
+            font-size: 1.5rem;
+            border-bottom: 1px solid var(--border-wiki);
+            margin: 2rem 0 1rem 0;
+            padding-bottom: 0.2rem;
+        }
+
+        h3 {
+            font-size: 1.15rem;
+            margin: 1.5rem 0 0.8rem 0;
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            font-size: 0.96rem;
+            text-align: justify;
+        }
+
+        a {
+            color: var(--text-link);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: var(--text-link-hover);
+        }
+
+        .gallery-button-wrap {
+            margin: 1.2rem 0 1.8rem 0;
+        }
+
+        .gallery-button {
+            display: inline-block;
+            border: 1px solid var(--border-wiki);
+            background: #f8f9fa;
+            color: var(--text-main);
+            padding: 0.7rem 1rem;
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .gallery-button:hover {
+            background: #eaecf0;
+            text-decoration: none;
+            color: var(--text-main);
+        }
+
+        .wiki-main {
+            display: flex;
+            gap: 2.5rem;
+            margin-top: 1rem;
+        }
+
+        .wiki-article {
+            flex: 1;
+        }
+
+        .infobox {
+            width: 280px;
+            background-color: var(--bg-infobox);
+            border: 1px solid var(--border-wiki);
+            padding: 0.4rem;
+            font-size: 0.85rem;
+            flex-shrink: 0;
+            float: right;
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .infobox-title {
+            text-align: center;
+            background-color: #eaecf0;
+            font-weight: bold;
+            font-size: 1rem;
+            padding: 0.45rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .infobox-image {
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .infobox-image img {
+            width: 100%;
+            max-width: 180px;
+            height: auto;
+            border: 1px solid var(--border-wiki);
+            display: inline-block;
+        }
+
+        .infobox table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .infobox th,
+        .infobox td {
+            padding: 0.4rem;
+            border-top: 1px solid #eaecf0;
+            vertical-align: top;
+        }
+
+        .infobox th {
+            text-align: left;
+            width: 40%;
+        }
+
+        .showcase-block {
+            margin: 2rem 0;
+            border: 1px solid var(--border-wiki);
+            background: #fff;
+            display: flex;
+        }
+
+        .showcase-text {
+            flex: 2;
+            padding: 1.5rem;
+        }
+
+        .showcase-img {
+            flex: 1;
+            background: #f8f9fa;
+            border-left: 1px solid var(--border-wiki);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+
+        .showcase-img img {
+            max-width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .gallery-section {
+            margin-top: 3rem;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .gallery-card {
+            border: 1px solid var(--border-wiki);
+            background: #f8f9fa;
+            padding: 0.75rem;
+        }
+
+        .gallery-card img {
+            display: block;
+            width: 100%;
+            height: 300px;
+            object-fit: contain;
+            background: #fff;
+            border: 1px solid #eaecf0;
+        }
+
+        .gallery-caption {
+            margin-top: 0.5rem;
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            text-align: center;
+            word-break: break-word;
+        }
+
+        footer {
+            margin-top: 4rem;
+            padding: 1rem 5%;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border-wiki);
+            text-align: left;
+        }
+
+        @media (max-width: 850px) {
+            .wiki-main {
+                flex-direction: column;
+            }
+
+            .infobox {
+                width: 100%;
+                max-width: 260px;
+                float: none;
+                margin: 0 auto 1.5rem auto;
+            }
+
+            .infobox-image img {
+                max-width: 120px;
+            }
+
+            .showcase-block {
+                flex-direction: column;
+            }
+
+            .showcase-img {
+                border-left: none;
+                border-top: 1px solid var(--border-wiki);
+            }
+
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.7rem;
+            }
+
+            nav {
+                gap: 1rem;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-card img {
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="wiki-logo-text">Wikipedia</div>
+    <nav>
+        <a href="#biografia">Biografía</a>
+        <a href="#proyectos">ÈNIGME</a>
+        <a href="#obra">Literatura</a>
+        <a href="#galeria">Galería</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>Carlos Armas Martínez</h1>
+
+    <div class="gallery-button-wrap">
+        <a class="gallery-button" href="#galeria">Galería</a>
+    </div>
+
+    <div class="wiki-main">
+        <div class="wiki-article">
+
+            <aside class="infobox">
+                <div class="infobox-title">Carlos Armas Martínez</div>
+                <div class="infobox-image">
+                    <img src="cj.jpg" alt="Retrato de Carlos Armas Martínez">
+                </div>
+                <table>
+                    <tr>
+                        <th>Nacimiento</th>
+                        <td>30 de agosto<br><a href="https://es.wikipedia.org/wiki/Choluteca" target="_blank">Choluteca</a>, <a href="https://es.wikipedia.org/wiki/Honduras" target="_blank">Honduras</a></td>
+                    </tr>
+                    <tr>
+                        <th>Residencia</th>
+                        <td><a href="https://es.wikipedia.org/wiki/Madrid" target="_blank">Madrid</a>, <a href="https://es.wikipedia.org/wiki/Espa%C3%B1a" target="_blank">España</a></td>
+                    </tr>
+                    <tr>
+                        <th>Nacionalidad</th>
+                        <td>Hondureña</td>
+                    </tr>
+                    <tr>
+                        <th>Ocupación</th>
+                        <td>Escritor, emprendedor y creador de marca</td>
+                    </tr>
+                    <tr>
+                        <th>Áreas</th>
+                        <td>Programación, derecho, contabilidad y dirección creativa</td>
+                    </tr>
+                    <tr>
+                        <th>Hija</th>
+                        <td>Abril Armas</td>
+                    </tr>
+                    <tr>
+                        <th>Firma / marca</th>
+                        <td><a href="https://www.enigmeofficial.com" target="_blank">ÈNIGME</a></td>
+                    </tr>
+                    <tr>
+                        <th>Obra destacada</th>
+                        <td><em><a href="https://www.amazon.es/Manifiesto-delirio-Carlos-Armas-Mart%C3%ADnez/dp/B0FV127RG8" target="_blank">Manifiesto del delirio</a></em></td>
+                    </tr>
+                </table>
+            </aside>
+
+            <p><strong>Carlos Armas Martínez</strong> es un escritor, emprendedor y creador hondureño radicado en <a href="https://es.wikipedia.org/wiki/Madrid" target="_blank">Madrid</a>, <a href="https://es.wikipedia.org/wiki/Espa%C3%B1a" target="_blank">España</a>. Es conocido por ser el fundador de la firma <strong><a href="https://www.enigmeofficial.com" target="_blank">ÈNIGME</a></strong> y por desarrollar una propuesta estética y literaria centrada en el misterio, la introspección y la identidad.</p>
+
+            <h2 id="biografia">Biografía y formación</h2>
+            <p>Originario de <a href="https://es.wikipedia.org/wiki/Choluteca" target="_blank">Choluteca</a>, <a href="https://es.wikipedia.org/wiki/Honduras" target="_blank">Honduras</a>, Carlos Armas Martínez ha desarrollado una trayectoria marcada por la combinación entre sensibilidad artística, visión empresarial y formación técnica. Su perfil integra conocimientos en <strong>programación</strong>, <strong>derecho</strong> y <strong>contabilidad</strong>, áreas que han influido tanto en su manera de estructurar proyectos como en su narrativa personal y creativa.</p>
+
+            <p>Su trabajo se caracteriza por unir estrategia, diseño y construcción de marca, especialmente en proyectos vinculados al lujo accesible, la presencia simbólica y la identidad visual. Desde <a href="https://es.wikipedia.org/wiki/Madrid" target="_blank">Madrid</a>, dirige procesos creativos y empresariales con proyección hacia <a href="https://es.wikipedia.org/wiki/Honduras" target="_blank">Honduras</a> y otros mercados hispanohablantes.</p>
+
+            <h3>Vida personal</h3>
+            <p>En su universo creativo tienen especial peso la soledad, el silencio, la estética de invierno y la búsqueda de significado. Entre sus influencias artísticas y musicales destaca <strong><a href="https://es.wikipedia.org/wiki/Lady_Gaga" target="_blank">Lady Gaga</a></strong>, cuya dimensión visual, conceptual y emocional ha sido señalada por el propio autor como una referencia importante dentro de su imaginario.</p>
+
+            <h2 id="proyectos">ÈNIGME</h2>
+            <p><strong><a href="https://www.enigmeofficial.com" target="_blank">ÈNIGME</a></strong> es una firma concebida por Carlos Armas Martínez como una propuesta que une diseño, narrativa de marca y simbolismo estético. Su identidad gira en torno a la idea de lujo, misterio y presencia, articulada bajo el lema <strong>“Aura · Misterio · Presencia”</strong>.</p>
+
+            <div class="showcase-block">
+                <div class="showcase-text">
+                    <p>La marca ha sido planteada como una plataforma de proyección comercial y conceptual, con especial interés en el mercado hondureño. A través de joyería, bolsos y otros objetos seleccionados, <strong><a href="https://www.enigmeofficial.com" target="_blank">ÈNIGME</a></strong> busca construir una experiencia de identidad, exclusividad y lenguaje visual propio.</p>
+                </div>
+                <div class="showcase-img">
+                    <img src="loo.png" alt="Emblema oficial de ÈNIGME">
+                </div>
+            </div>
+
+            <h2 id="obra">Producción literaria</h2>
+            <h3><a href="https://www.amazon.es/Manifiesto-delirio-Carlos-Armas-Mart%C3%ADnez/dp/B0FV127RG8" target="_blank">Manifiesto del delirio</a></h3>
+            <p>Entre sus trabajos literarios destaca <em><strong><a href="https://www.amazon.es/Manifiesto-delirio-Carlos-Armas-Mart%C3%ADnez/dp/B0FV127RG8" target="_blank">Manifiesto del delirio</a></strong></em>, obra en la que explora la subjetividad, la fractura emocional y la percepción de la realidad. El texto se mueve entre lo introspectivo, lo psicológico y lo simbólico, alejándose de una estructura narrativa lineal tradicional.</p>
+
+            <div class="showcase-block">
+                <div class="showcase-text">
+                    <p>Su escritura trabaja lo íntimo como territorio de tensión, memoria y construcción del yo. En ella conviven el pensamiento analítico, la sensibilidad estética y una búsqueda constante de lenguaje para nombrar lo invisible. Esta dimensión literaria dialoga con la construcción simbólica de su marca y con su visión creativa general.</p>
+                </div>
+                <div class="showcase-img">
+                    <img src="cja.jpg" alt="Portada de Manifiesto del delirio">
+                </div>
+            </div>
+
+            <h2>Filosofía creativa</h2>
+            <p>La filosofía creativa de Carlos Armas Martínez se apoya en la idea de que la identidad no es fija, sino una construcción en movimiento. Desde esa perspectiva, sus proyectos combinan estructura, emoción, estética y ambición simbólica, articulando una visión donde empresa, literatura y presencia visual forman parte de un mismo lenguaje.</p>
+
+            <h2 id="galeria" class="gallery-section">Galería</h2>
+            <div class="gallery-grid">
+                <div class="gallery-card">
+                    <img src="cj.jpg" alt="Galería - cj.jpg">
+                    <div class="gallery-caption">Carlos Armas Martínez</div>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="cja.jpg" alt="Galería - cja.jpg">
+                    <div class="gallery-caption">Carlos Armas Martínez</div>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="loo.png" alt="Galería - loo.png">
+                    <div class="gallery-caption">Carlos Armas Martínez</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>Esta página presenta un perfil biográfico de carácter editorial e informativo.</p>
+</footer>
+
+</body>
+</html>
